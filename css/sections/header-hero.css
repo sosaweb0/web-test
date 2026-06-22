@@ -943,11 +943,9 @@ body.nav-open {
   .hero-section__inner {
     min-height: 100svh;
     min-height: 100dvh;
-    min-height: max(760px, 100svh);
-    min-height: max(760px, 100dvh);
     display: grid;
-    grid-template-rows: auto minmax(190px, 1fr);
-    align-content: space-between;
+    grid-template-rows: auto minmax(220px, 1fr);
+    align-content: stretch;
     align-items: stretch;
     background: #fbf4ea;
     overflow: hidden;
@@ -1011,11 +1009,11 @@ body.nav-open {
     inset: auto;
     z-index: 2;
     width: calc(100% - 32px);
-    height: clamp(205px, 29vh, 262px);
-    height: clamp(205px, 29svh, 262px);
-    min-height: auto;
-    margin: clamp(10px, 1.6vh, 18px) 16px clamp(14px, 2.2vh, 24px);
-    margin: clamp(10px, 1.6svh, 18px) 16px clamp(14px, 2.2svh, 24px);
+    align-self: stretch;
+    min-height: 220px;
+    height: auto;
+    margin: clamp(8px, 1.2vh, 14px) 14px 0;
+    margin: clamp(8px, 1.2svh, 14px) 14px 0;
     opacity: 1;
     background: transparent;
     overflow: hidden;
@@ -1029,7 +1027,7 @@ body.nav-open {
     z-index: 2;
     pointer-events: none;
     background:
-      linear-gradient(180deg, #fbf4ea 0%, rgba(251, 244, 234, 0.68) 12%, rgba(251, 244, 234, 0) 34%, rgba(251, 244, 234, 0) 72%, rgba(251, 244, 234, 0.72) 92%, #fbf4ea 100%),
+      linear-gradient(180deg, #fbf4ea 0%, rgba(251, 244, 234, 0.68) 12%, rgba(251, 244, 234, 0) 34%, rgba(251, 244, 234, 0) 72%, rgba(251, 244, 234, 0.44) 94%, #fbf4ea 100%),
       linear-gradient(90deg, #fbf4ea 0%, rgba(251, 244, 234, 0.72) 10%, rgba(251, 244, 234, 0) 30%, rgba(251, 244, 234, 0) 82%, rgba(251, 244, 234, 0.5) 100%);
   }
 

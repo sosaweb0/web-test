@@ -131,3 +131,163 @@ button {
     transition: none;
   }
 }
+
+@media (max-width: 540px) {
+  .section-divider {
+    height: 34px;
+  }
+
+  .section-divider.is-visible::before,
+  .section-divider.is-visible .section-divider__mark {
+    transition-duration: 360ms !important;
+    transition-delay: 0ms !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .benefits-section[data-animate] .benefits-section__media,
+  .benefits-section[data-animate] .benefits-section__eyebrow,
+  .benefits-section[data-animate] .benefits-section__title,
+  .benefits-section[data-animate] .benefits-section__description,
+  .benefits-section[data-animate] .benefit-card,
+  .editorial-soaps[data-animate] .editorial-soaps__eyebrow,
+  .editorial-soaps[data-animate] .editorial-soaps__title,
+  .editorial-soaps[data-animate] .editorial-soaps__text,
+  .editorial-soaps[data-animate] .editorial-soaps__media,
+  .skin-needs[data-animate] .skin-needs__botanical,
+  .skin-needs[data-animate] .skin-needs__eyebrow,
+  .skin-needs[data-animate] .skin-needs__title,
+  .skin-needs[data-animate] .skin-needs__subtitle,
+  .skin-needs[data-animate] .skin-needs__option,
+  .kits[data-animate] .kits__eyebrow,
+  .kits[data-animate] .kits__title,
+  .kits[data-animate] .kits__subtitle,
+  .kits[data-animate] .kit-card,
+  .ingredients[data-animate] .ingredients__eyebrow,
+  .ingredients[data-animate] .ingredients__title,
+  .ingredients[data-animate] .ingredients__subtitle,
+  .ingredients[data-animate] .ingredients__item,
+  .ingredients[data-animate] .ingredients__media,
+  .results[data-animate] .results__title,
+  .results[data-animate] .results__stat,
+  .results[data-animate] .results__media,
+  .testimonial[data-animate] .testimonial__eyebrow,
+  .testimonial[data-animate] .testimonial__title,
+  .testimonial[data-animate] .testimonial__quote,
+  .testimonial[data-animate] .testimonial__author,
+  .testimonial[data-animate] .testimonial__rating,
+  .testimonial[data-animate] .testimonial__media,
+  .final-cta[data-animate] .final-cta__eyebrow,
+  .final-cta[data-animate] .final-cta__title,
+  .final-cta[data-animate] .final-cta__text,
+  .final-cta[data-animate] .final-cta__button,
+  .trust-bar[data-animate] .trust-bar__item,
+  .site-footer[data-animate] .site-footer__brand,
+  .site-footer[data-animate] .site-footer__nav,
+  .site-footer[data-animate] .site-footer__social,
+  .site-footer[data-animate] .site-footer__bottom {
+    transform: translate3d(0, 10px, 0) !important;
+    will-change: opacity, transform;
+  }
+
+  .benefits-section.is-visible .benefits-section__media,
+  .benefits-section.is-visible .benefits-section__eyebrow,
+  .benefits-section.is-visible .benefits-section__title,
+  .benefits-section.is-visible .benefits-section__description,
+  .benefits-section.is-visible .benefit-card,
+  .editorial-soaps.is-visible .editorial-soaps__eyebrow,
+  .editorial-soaps.is-visible .editorial-soaps__title,
+  .editorial-soaps.is-visible .editorial-soaps__text,
+  .editorial-soaps.is-visible .editorial-soaps__media,
+  .skin-needs.is-visible .skin-needs__botanical,
+  .skin-needs.is-visible .skin-needs__eyebrow,
+  .skin-needs.is-visible .skin-needs__title,
+  .skin-needs.is-visible .skin-needs__subtitle,
+  .skin-needs.is-visible .skin-needs__option,
+  .kits.is-visible .kits__eyebrow,
+  .kits.is-visible .kits__title,
+  .kits.is-visible .kits__subtitle,
+  .kits.is-visible .kit-card,
+  .ingredients.is-visible .ingredients__eyebrow,
+  .ingredients.is-visible .ingredients__title,
+  .ingredients.is-visible .ingredients__subtitle,
+  .ingredients.is-visible .ingredients__item,
+  .ingredients.is-visible .ingredients__media,
+  .results.is-visible .results__title,
+  .results.is-visible .results__stat,
+  .results.is-visible .results__media,
+  .testimonial.is-visible .testimonial__eyebrow,
+  .testimonial.is-visible .testimonial__title,
+  .testimonial.is-visible .testimonial__quote,
+  .testimonial.is-visible .testimonial__author,
+  .testimonial.is-visible .testimonial__rating,
+  .testimonial.is-visible .testimonial__media,
+  .final-cta.is-visible .final-cta__eyebrow,
+  .final-cta.is-visible .final-cta__title,
+  .final-cta.is-visible .final-cta__text,
+  .final-cta.is-visible .final-cta__button,
+  .trust-bar.is-visible .trust-bar__item,
+  .site-footer.is-visible .site-footer__brand,
+  .site-footer.is-visible .site-footer__nav,
+  .site-footer.is-visible .site-footer__social,
+  .site-footer.is-visible .site-footer__bottom {
+    transform: translate3d(0, 0, 0) !important;
+    transition-property: opacity, transform !important;
+    transition-duration: 380ms !important;
+    transition-delay: 0ms !important;
+    will-change: auto;
+  }
+}
+/* Mobile reduced-motion performance guard */
+@media (max-width: 760px) and (prefers-reduced-motion: reduce) {
+  .section-divider[data-animate]::before,
+  .section-divider[data-animate] .section-divider__mark,
+  .section-divider.is-visible::before,
+  .section-divider.is-visible .section-divider__mark,
+  .benefits-section[data-animate] .benefits-section__media,
+  .benefits-section[data-animate] .benefits-section__eyebrow,
+  .benefits-section[data-animate] .benefits-section__title,
+  .benefits-section[data-animate] .benefits-section__description,
+  .benefits-section[data-animate] .benefit-card,
+  .editorial-soaps[data-animate] .editorial-soaps__eyebrow,
+  .editorial-soaps[data-animate] .editorial-soaps__title,
+  .editorial-soaps[data-animate] .editorial-soaps__text,
+  .editorial-soaps[data-animate] .editorial-soaps__media,
+  .skin-needs[data-animate] .skin-needs__botanical,
+  .skin-needs[data-animate] .skin-needs__eyebrow,
+  .skin-needs[data-animate] .skin-needs__title,
+  .skin-needs[data-animate] .skin-needs__subtitle,
+  .skin-needs[data-animate] .skin-needs__option,
+  .kits[data-animate] .kits__eyebrow,
+  .kits[data-animate] .kits__title,
+  .kits[data-animate] .kits__subtitle,
+  .kits[data-animate] .kit-card,
+  .ingredients[data-animate] .ingredients__eyebrow,
+  .ingredients[data-animate] .ingredients__title,
+  .ingredients[data-animate] .ingredients__subtitle,
+  .ingredients[data-animate] .ingredients__item,
+  .ingredients[data-animate] .ingredients__media,
+  .results[data-animate] .results__title,
+  .results[data-animate] .results__stat,
+  .results[data-animate] .results__media,
+  .testimonial[data-animate] .testimonial__eyebrow,
+  .testimonial[data-animate] .testimonial__title,
+  .testimonial[data-animate] .testimonial__quote,
+  .testimonial[data-animate] .testimonial__author,
+  .testimonial[data-animate] .testimonial__rating,
+  .testimonial[data-animate] .testimonial__media,
+  .final-cta[data-animate] .final-cta__eyebrow,
+  .final-cta[data-animate] .final-cta__title,
+  .final-cta[data-animate] .final-cta__text,
+  .final-cta[data-animate] .final-cta__button,
+  .trust-bar[data-animate] .trust-bar__item,
+  .site-footer[data-animate] .site-footer__brand,
+  .site-footer[data-animate] .site-footer__nav,
+  .site-footer[data-animate] .site-footer__social,
+  .site-footer[data-animate] .site-footer__bottom {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    will-change: auto !important;
+  }
+}

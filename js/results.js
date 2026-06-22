@@ -9,7 +9,7 @@ const setFinalResultValues = () => {
 };
 
 const animateResultValues = () => {
-  const duration = 1500;
+  const duration = window.matchMedia("(max-width: 760px)").matches ? 650 : 1500;
   const startTime = performance.now();
 
   const tick = (currentTime) => {
@@ -55,8 +55,8 @@ if (resultsSection) {
         });
       },
       {
-        threshold: 0.22,
-        rootMargin: "0px 0px -10% 0px",
+        threshold: window.matchMedia("(max-width: 760px)").matches ? 0.08 : 0.22,
+        rootMargin: window.matchMedia("(max-width: 760px)").matches ? "0px 0px -2% 0px" : "0px 0px -10% 0px",
       }
     );
 

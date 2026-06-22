@@ -26,8 +26,8 @@
       });
     },
     {
-      threshold: 0.14,
-      rootMargin: "0px 0px -8% 0px",
+      threshold: window.matchMedia("(max-width: 760px)").matches ? 0.08 : 0.14,
+      rootMargin: window.matchMedia("(max-width: 760px)").matches ? "0px 0px -2% 0px" : "0px 0px -8% 0px",
     }
   );
 
