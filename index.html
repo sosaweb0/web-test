@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Natura Piel | Jabones artesanales naturales</title>
+
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/sections/header-hero.css" />
+  <link rel="stylesheet" href="css/sections/about-overlay.css" />
+  <link rel="stylesheet" href="css/sections/contact-modal.css" />
+  <link rel="stylesheet" href="css/sections/benefits.css" />
+  <link rel="stylesheet" href="css/sections/editorial-soaps.css" />
+  <link rel="stylesheet" href="css/sections/skin-needs.css" />
+  <link rel="stylesheet" href="css/sections/kits.css" />
+  <link rel="stylesheet" href="css/sections/landing-hidratante.css" />
+  <link rel="stylesheet" href="css/sections/landing-antiacne.css" />
+  <link rel="stylesheet" href="css/sections/landing-antimanchas.css" />
+  <link rel="stylesheet" href="css/sections/ingredients.css" />
+  <link rel="stylesheet" href="css/sections/results.css" />
+  <link rel="stylesheet" href="css/sections/testimonial.css" />
+  <link rel="stylesheet" href="css/sections/final-cta.css" />
+  <link rel="stylesheet" href="css/sections/trust-bar.css" />
+  <link rel="stylesheet" href="css/sections/footer.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header" data-header>
+      <div class="site-header__inner">
+        <a class="brand" href="#" aria-label="Natura Piel inicio">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48">
+              <path d="M24 6c7.6 5.2 13 12.8 13 21.1C37 35.4 31.2 42 24 42S11 35.4 11 27.1C11 18.8 16.4 11.2 24 6Z" />
+              <path d="M24 12v25M17 25c4.5-.2 8-2.3 11-6M31 25c-4.5-.2-8-2.3-11-6" />
+            </svg>
+          </span>
+          <span class="brand__text">
+            <span>Natura</span>
+            <span>Piel</span>
+          </span>
+        </a>
+
+        <nav class="main-nav" id="mobile-main-menu" data-nav aria-label="Navegacion principal">
+          <a href="#" class="main-nav__link">Inicio</a>
+          <a href="#" class="main-nav__link" data-about-open>Nosotros</a>
+          <div class="main-nav__item main-nav__item--kits" data-kits-menu>
+            <button class="main-nav__link main-nav__link--button" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="kits-menu-panel" data-kits-menu-toggle>
+              Kits
+            </button>
+            <div class="kits-menu" id="kits-menu-panel" aria-hidden="true" data-kits-menu-panel>
+              <div class="kits-menu__panel" role="menu" aria-label="Rituales por objetivo">
+                <a class="kits-menu__card kits-menu__card--hidratante" href="#landing-hidratante" role="menuitem" data-landing-hidratante-open>
+                  <figure class="kits-menu__image">
+                    <img src="assets/images/kit-hidratante.webp" alt="Kit Hidratante" />
+                  </figure>
+                  <span class="kits-menu__content">
+                    <span class="kits-menu__title">Kit Hidratante</span>
+                    <span class="kits-menu__text">Piel suave y nutrida</span>
+                    <span class="kits-menu__cta">Ver ritual &rarr;</span>
+                  </span>
+                </a>
+
+                <a class="kits-menu__card kits-menu__card--antiacne" href="#landing-antiacne" role="menuitem" data-landing-antiacne-open>
+                  <figure class="kits-menu__image">
+                    <img src="assets/images/kit-anti-acne.webp" alt="Kit Anti Acne" />
+                  </figure>
+                  <span class="kits-menu__content">
+                    <span class="kits-menu__title">Kit Anti Acn&eacute;</span>
+                    <span class="kits-menu__text">Limpieza profunda y control</span>
+                    <span class="kits-menu__cta">Ver ritual &rarr;</span>
+                  </span>
+                </a>
+
+                <a class="kits-menu__card kits-menu__card--antimanchas" href="#landing-antimanchas" role="menuitem" data-landing-antimanchas-open>
+                  <figure class="kits-menu__image">
+                    <img src="assets/images/kit-anti-manchas.webp" alt="Kit Anti Manchas" />
+                  </figure>
+                  <span class="kits-menu__content">
+                    <span class="kits-menu__title">Kit Anti Manchas</span>
+                    <span class="kits-menu__text">Tono uniforme y luminoso</span>
+                    <span class="kits-menu__cta">Ver ritual &rarr;</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="main-nav__link" data-contact-open>Contacto</a>
+        </nav>
+
+        <div class="site-header__actions">
+          <form class="site-search" action="#" method="get" role="search" data-search>
+            <label class="site-search__label" for="site-search-input">Buscar productos</label>
+            <input
+              class="site-search__input"
+              id="site-search-input"
+              name="q"
+              type="search"
+              placeholder="Buscar productos..."
+              autocomplete="off"
+              data-search-input
+            />
+
+            <button class="icon-button site-search__toggle" type="button" aria-label="Abrir busqueda" aria-expanded="false" data-search-toggle>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="11" cy="11" r="7"></circle>
+                <path d="m16.5 16.5 4 4"></path>
+              </svg>
+            </button>
+          </form>
+
+          <button class="icon-button icon-button--cart" type="button" aria-label="Carrito de compras">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 8h15l-2 9H8L6 4H3"></path>
+              <circle cx="10" cy="20" r="1.4"></circle>
+              <circle cx="18" cy="20" r="1.4"></circle>
+            </svg>
+            <span class="icon-button__badge">0</span>
+          </button>
+
+          <button class="menu-toggle" type="button" data-menu-toggle aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-main-menu">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Shopify section candidate: sections/about-overlay.liquid -->
+    <section class="about-overlay" aria-labelledby="about-overlay-title" aria-hidden="true" data-about-overlay>
+      <div class="about-overlay__panel" role="dialog" aria-modal="true" aria-labelledby="about-overlay-title" aria-describedby="about-overlay-description" tabindex="-1">
+        <button class="about-overlay__close" type="button" aria-label="Cerrar" data-about-close>
+          <span>Cerrar</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 5l14 14M19 5 5 19" />
+          </svg>
+        </button>
+
+        <figure class="about-overlay__media">
+          <div class="about-overlay__brand" aria-hidden="true">
+            <span class="about-overlay__brand-mark">
+              <svg viewBox="0 0 48 48">
+                <path d="M24 6c7.6 5.2 13 12.8 13 21.1C37 35.4 31.2 42 24 42S11 35.4 11 27.1C11 18.8 16.4 11.2 24 6Z" />
+                <path d="M24 12v25M17 25c4.5-.2 8-2.3 11-6M31 25c-4.5-.2-8-2.3-11-6" />
+              </svg>
+            </span>
+            <span class="about-overlay__brand-text">
+              <span>Natura</span>
+              <span>Piel</span>
+            </span>
+          </div>
+
+          <img
+            class="about-overlay__image"
+            src="assets/images/about-overlay.webp"
+            alt="Jabon artesanal, aceite botanico, avena y flores naturales en una composicion editorial"
+          />
+        </figure>
+
+        <div class="about-overlay__content">
+          <p class="about-overlay__eyebrow">Sobre nosotros</p>
+
+          <h2 class="about-overlay__title" id="about-overlay-title">
+            Creemos que el cuidado de la piel debe sentirse simple, natural y efectivo.
+          </h2>
+
+          <p class="about-overlay__text" id="about-overlay-description">
+            Creamos rituales inspirados en ingredientes botanicos cuidadosamente seleccionados.
+            Nuestro objetivo es ayudarte a cuidar tu piel con productos que combinan naturaleza,
+            bienestar y una experiencia premium.
+          </p>
+
+          <div class="about-overlay__values" aria-label="Nuestros valores">
+            <article class="about-value">
+              <span class="about-value__icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32">
+                  <path d="M6 24c12.5.4 19.7-6.2 21-18C15.4 7.3 7.8 13.4 6 24Z" />
+                  <path d="M7.5 24c5.8-6.8 11.5-10.4 18.4-15.2" />
+                </svg>
+              </span>
+              <h3>Ingredientes seleccionados</h3>
+              <p>Botanicos y activos de origen natural para cuidar tu piel con suavidad.</p>
+            </article>
+
+            <article class="about-value">
+              <span class="about-value__icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32">
+                  <path d="M16 4c1.7 6.2 4.8 9.3 11 11-6.2 1.7-9.3 4.8-11 11-1.7-6.2-4.8-9.3-11-11 6.2-1.7 9.3-4.8 11-11Z" />
+                  <path d="M25 5c.7 2.4 1.9 3.6 4.3 4.3-2.4.7-3.6 1.9-4.3 4.3-.7-2.4-1.9-3.6-4.3-4.3 2.4-.7 3.6-1.9 4.3-4.3Z" />
+                </svg>
+              </span>
+              <h3>Experiencia premium</h3>
+              <p>Texturas, aromas y detalles pensados para elevar tu ritual diario.</p>
+            </article>
+
+            <article class="about-value">
+              <span class="about-value__icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32">
+                  <path d="M16 27S5.5 20.9 5.5 12.8c0-3.5 2.4-6.1 5.7-6.1 2 0 3.7 1 4.8 2.7 1.1-1.7 2.8-2.7 4.8-2.7 3.3 0 5.7 2.6 5.7 6.1C26.5 20.9 16 27 16 27Z" />
+                </svg>
+              </span>
+              <h3>Bienestar diario</h3>
+              <p>Productos creados para acompanar equilibrio, calma y cuidado personal.</p>
+            </article>
+          </div>
+
+          <div class="about-overlay__statement">
+            <span class="about-overlay__statement-mark" aria-hidden="true">
+              <svg viewBox="0 0 32 32">
+                <path d="M16 27V5" />
+                <path d="M16 12c-4.2-.2-7.4-2.4-9.5-6 4.2.2 7.4 2.4 9.5 6Z" />
+                <path d="M16 18c4.2-.2 7.4-2.4 9.5-6-4.2.2-7.4 2.4-9.5 6Z" />
+                <path d="M16 24c-3.2-.1-5.7-1.7-7.4-4.5 3.2.1 5.7 1.7 7.4 4.5Z" />
+              </svg>
+            </span>
+            <p>
+              &ldquo;Creemos que los mejores rituales son los que disfrutas repetir cada dia.&rdquo;
+            </p>
+          </div>
+
+          <a class="about-overlay__button" href="#kits-title" data-about-kits>
+            Descubrir nuestros kits
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shopify section candidate: sections/contact-modal.liquid -->
+    <section class="contact-modal" aria-labelledby="contact-modal-title" aria-describedby="contact-modal-description" aria-hidden="true" data-contact-modal>
+      <div class="contact-modal__dialog" role="dialog" aria-modal="true" tabindex="-1">
+        <button class="contact-modal__close" type="button" aria-label="Cerrar contacto" data-contact-close>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 5l14 14M19 5 5 19" />
+          </svg>
+        </button>
+
+        <div class="contact-modal__content">
+          <div class="contact-modal__brand" aria-label="LUNA+ Skincare">
+            <span class="contact-modal__brand-main">LUNA+</span>
+            <span class="contact-modal__brand-sub">Skincare</span>
+          </div>
+
+          <span class="contact-modal__botanical" aria-hidden="true">
+            <svg viewBox="0 0 48 48">
+              <path d="M20 41C22.5 27 28.8 16.2 39 7" />
+              <path d="M25.5 25.5c-6.1-.4-10.7-3.2-13.6-8.4 6.1.3 10.6 3.1 13.6 8.4Z" />
+              <path d="M30.5 18c-4.9-.2-8.6-2.4-10.9-6.5 4.9.2 8.5 2.3 10.9 6.5Z" />
+              <path d="M24 31.5c5.5.2 9.6-2.3 12.4-7.4-5.4-.1-9.6 2.4-12.4 7.4Z" />
+            </svg>
+          </span>
+
+          <h2 class="contact-modal__title" id="contact-modal-title">Estamos aqu&iacute; para ti</h2>
+
+          <p class="contact-modal__description" id="contact-modal-description">
+            Si tienes dudas sobre nuestros rituales o quieres elegir el kit ideal,
+            estamos listos para orientarte con calma y cuidado.
+          </p>
+
+          <div class="contact-modal__methods" aria-label="Formas de contacto">
+            <a class="contact-modal__link" href="https://wa.me/18091234567" target="_blank" rel="noopener">
+              <span class="contact-modal__icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32">
+                  <path d="M16 5.5c-5.8 0-10.5 4.2-10.5 9.5 0 2 .7 3.9 1.9 5.4L6 26.5l6.1-1.8c1.2.5 2.5.8 3.9.8 5.8 0 10.5-4.2 10.5-9.5S21.8 5.5 16 5.5Z" />
+                  <path d="M12.4 12.2c.4 3.5 2.6 5.9 6.6 7.2l1.8-1.8-2.5-2-1.2 1.1c-1.2-.5-2.1-1.3-2.7-2.5l1-1.2-2-2.4-1 .6Z" />
+                </svg>
+              </span>
+              <span>
+                <span class="contact-modal__label">WhatsApp</span>
+                <span class="contact-modal__value">(809) 123-4567</span>
+              </span>
+            </a>
+
+            <a class="contact-modal__link" href="mailto:hola@lunaskincare.com">
+              <span class="contact-modal__icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32">
+                  <path d="M6 9h20v14H6z" />
+                  <path d="m7 10 9 8 9-8" />
+                </svg>
+              </span>
+              <span>
+                <span class="contact-modal__label">Correo electr&oacute;nico</span>
+                <span class="contact-modal__value">hola@lunaskincare.com</span>
+              </span>
+            </a>
+          </div>
+
+          <div class="contact-modal__divider" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 20S4.5 15.6 4.5 9.8c0-2.5 1.7-4.3 4.1-4.3 1.4 0 2.6.7 3.4 1.9.8-1.2 2-1.9 3.4-1.9 2.4 0 4.1 1.8 4.1 4.3C19.5 15.6 12 20 12 20Z" />
+            </svg>
+          </div>
+
+          <p class="contact-modal__note">Te responderemos lo antes posible.</p>
+          <p class="contact-modal__hours">Lunes a Viernes<br />8:00 AM - 5:00 PM</p>
+        </div>
+
+        <figure class="contact-modal__media">
+          <img
+            class="contact-modal__image"
+            src="assets/images/contact-luna-still-life.svg"
+            alt="Composicion premium LUNA+ Skincare con jabon, avena, cepillo de bambu y hojas botanicas"
+          />
+        </figure>
+      </div>
+    </section>
+
+    <main>
+      <!-- Shopify section candidate: sections/hero-ritual.liquid -->
+      <section class="hero-section" aria-labelledby="hero-title">
+        <div class="hero-section__inner">
+          <div class="hero-section__content">
+            <p class="hero-section__eyebrow">
+              Jabones artesanales para piel sensible
+            </p>
+
+            <h1 class="hero-section__title" id="hero-title">
+              Tu ritual diario para una piel que se ve y se siente incre&iacute;ble
+            </h1>
+
+            <p class="hero-section__description">
+              Jabones artesanales naturales que transforman tu piel desde el primer uso.
+            </p>
+
+            <a class="hero-section__button" href="#">
+              Descubre tu kit ideal
+            </a>
+          </div>
+
+          <figure class="hero-section__media">
+              <img
+              class="hero-section__image"
+              src="assets/images/hero-soap-stack-premium.png"
+              alt="Jabones artesanales naturales apilados sobre lino crema con hojas botanicas"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!-- Shopify section candidate: sections/benefits.liquid -->
+      <section class="benefits-section" aria-labelledby="benefits-title">
+        <div class="benefits-section__inner">
+          <figure class="benefits-section__media">
+            <img
+              class="benefits-section__image"
+              src="assets/images/benefits-woman.webp"
+              alt="Mujer con piel saludable disfrutando un ritual natural de cuidado facial"
+            />
+          </figure>
+
+          <div class="benefits-section__content">
+            <p class="benefits-section__eyebrow">Ritual natural de cuidado</p>
+
+            <h2 class="benefits-section__title" id="benefits-title">
+              Cuidado natural que se siente
+            </h2>
+
+            <p class="benefits-section__description">
+              Una experiencia sensorial creada para nutrir tu piel desde el primer uso.
+            </p>
+
+            <div class="benefits-section__grid" aria-label="Beneficios principales">
+              <article class="benefit-card">
+                <img class="benefit-card__icon" src="assets/icons/icon-natural.svg" alt="" aria-hidden="true" />
+                <h3 class="benefit-card__title">Ingredientes naturales</h3>
+              </article>
+
+              <article class="benefit-card">
+                <img class="benefit-card__icon" src="assets/icons/icon-handmade.svg" alt="" aria-hidden="true" />
+                <h3 class="benefit-card__title">Hecho a mano con amor</h3>
+              </article>
+
+              <article class="benefit-card">
+                <img class="benefit-card__icon" src="assets/icons/icon-clean.svg" alt="" aria-hidden="true" />
+                <h3 class="benefit-card__title">Sin quimicos agresivos</h3>
+              </article>
+
+              <article class="benefit-card">
+                <img class="benefit-card__icon" src="assets/icons/icon-cruelty-free.svg" alt="" aria-hidden="true" />
+                <h3 class="benefit-card__title">Cruelty free</h3>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider" aria-hidden="true">
+        <span class="section-divider__mark">
+          <svg viewBox="0 0 32 32">
+            <path d="M16 25.5V7.5" />
+            <path d="M16 10.2c-2.35-1.35-3.45-3.35-3.05-5.85 2.85.55 4.05 2.55 3.05 5.85Z" />
+            <path d="M16 13.2c-3.75-.15-6.45 1.85-7.95 5.65 4.25.45 7.1-1.45 7.95-5.65Z" />
+            <path d="M16 16.5c3.75-.15 6.45 1.85 7.95 5.65-4.25.45-7.1-1.45-7.95-5.65Z" />
+            <path d="M11.25 26.2h9.5" />
+          </svg>
+        </span>
+      </div>
+
+      <!-- Shopify section candidate: sections/editorial-soaps.liquid -->
+      <section class="editorial-soaps" aria-labelledby="editorial-soaps-title">
+        <div class="editorial-soaps__inner">
+          <div class="editorial-soaps__content">
+            <p class="editorial-soaps__eyebrow">Ritual de cuidado diario</p>
+
+            <h2 class="editorial-soaps__title" id="editorial-soaps-title">
+              Mas que jabones, creamos experiencias
+            </h2>
+
+            <p class="editorial-soaps__text">
+              Cada barra esta disenada para limpiar, nutrir y transformar tu piel de forma natural.
+            </p>
+          </div>
+
+          <figure class="editorial-soaps__media">
+            <img
+              class="editorial-soaps__image"
+              src="assets/images/editorial-soap.webp"
+              alt="Jabon natural artesanal en una composicion editorial con botanicos suaves"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <div class="section-divider" aria-hidden="true">
+        <span class="section-divider__mark">
+          <svg viewBox="0 0 32 32">
+            <path d="M16 25.5V7.5" />
+            <path d="M16 10.2c-2.35-1.35-3.45-3.35-3.05-5.85 2.85.55 4.05 2.55 3.05 5.85Z" />
+            <path d="M16 13.2c-3.75-.15-6.45 1.85-7.95 5.65 4.25.45 7.1-1.45 7.95-5.65Z" />
+            <path d="M16 16.5c3.75-.15 6.45 1.85 7.95 5.65-4.25.45-7.1-1.45-7.95-5.65Z" />
+            <path d="M11.25 26.2h9.5" />
+          </svg>
+        </span>
+      </div>
+
+      <!-- Shopify section candidate: sections/skin-needs.liquid -->
+      <section class="skin-needs" aria-labelledby="skin-needs-title">
+        <div class="skin-needs__inner">
+          <figure class="skin-needs__media">
+            <img
+              class="skin-needs__image"
+              src="assets/images/skin-needs-botanical.webp"
+              alt="Rama botanica delicada en una composicion editorial de skincare natural"
+            />
+          </figure>
+
+          <div class="skin-needs__content">
+            <p class="skin-needs__eyebrow">Descubre tu necesidad principal</p>
+
+            <h2 class="skin-needs__title" id="skin-needs-title">
+              Que necesita tu piel hoy?
+            </h2>
+
+            <p class="skin-needs__subtitle">
+              Elige el ritual perfecto para ti
+            </p>
+
+            <div class="skin-needs__options" aria-label="Opciones de necesidades de piel">
+              <article class="skin-needs__option">
+                <img class="skin-needs__icon" src="assets/icons/icon-hydration.svg" alt="" aria-hidden="true" />
+                <h3 class="skin-needs__option-title">Hidratacion profunda</h3>
+              </article>
+
+              <article class="skin-needs__option">
+                <img class="skin-needs__icon" src="assets/icons/icon-glow.svg" alt="" aria-hidden="true" />
+                <h3 class="skin-needs__option-title">Tono uniforme y luminoso</h3>
+              </article>
+
+              <article class="skin-needs__option">
+                <img class="skin-needs__icon" src="assets/icons/icon-balance.svg" alt="" aria-hidden="true" />
+                <h3 class="skin-needs__option-title">Limpieza y control</h3>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider" aria-hidden="true">
+        <span class="section-divider__mark">
+          <svg viewBox="0 0 32 32">
+            <path d="M16 25.5V7.5" />
+            <path d="M16 10.2c-2.35-1.35-3.45-3.35-3.05-5.85 2.85.55 4.05 2.55 3.05 5.85Z" />
+            <path d="M16 13.2c-3.75-.15-6.45 1.85-7.95 5.65 4.25.45 7.1-1.45 7.95-5.65Z" />
+            <path d="M16 16.5c3.75-.15 6.45 1.85 7.95 5.65-4.25.45-7.1-1.45-7.95-5.65Z" />
+            <path d="M11.25 26.2h9.5" />
+          </svg>
+        </span>
+      </div>
+
+      <!-- Shopify section candidate: sections/kits.liquid -->
+      <section class="kits" aria-labelledby="kits-title">
+        <div class="kits__inner">
+          <header class="kits__header">
+            <p class="kits__eyebrow">Rituales por objetivo</p>
+
+            <h2 class="kits__title" id="kits-title">
+              Nuestros Kits
+            </h2>
+
+            <p class="kits__subtitle">
+              Rituales completos para cada necesidad
+            </p>
+          </header>
+
+          <div class="kits__grid">
+            <article class="kit-card kit-card--hydrating" id="kit-hidratante">
+              <a class="kit-card__link" href="#landing-hidratante" aria-label="Descubrir mas sobre Kit Hidratante" data-landing-hidratante-open>
+                <figure class="kit-card__media">
+                  <img
+                    class="kit-card__image"
+                    src="assets/images/kit-hidratante.webp"
+                    alt="Kit Hidratante con jabones artesanales naturales"
+                  />
+                </figure>
+
+                <div class="kit-card__body">
+                  <h3 class="kit-card__title">Kit Hidratante</h3>
+                  <p class="kit-card__benefit">Piel suave y nutrida</p>
+                  <span class="kit-card__cta">Descubrir mas</span>
+                </div>
+              </a>
+            </article>
+
+            <article class="kit-card kit-card--spots" id="kit-anti-manchas">
+              <a class="kit-card__link" href="#landing-antimanchas" aria-label="Conocer mas sobre Kit Anti Manchas" data-landing-antimanchas-open>
+                <figure class="kit-card__media">
+                  <img
+                    class="kit-card__image"
+                    src="assets/images/kit-anti-manchas.webp"
+                    alt="Kit Anti Manchas con jabones artesanales naturales"
+                  />
+                </figure>
+
+                <div class="kit-card__body">
+                  <h3 class="kit-card__title">Kit Anti Manchas</h3>
+                  <p class="kit-card__benefit">Piel luminosa y uniforme</p>
+                  <span class="kit-card__cta">Conocer mas</span>
+                </div>
+              </a>
+            </article>
+
+            <article class="kit-card kit-card--acne" id="kit-anti-acne">
+              <a class="kit-card__link" href="#landing-antiacne" aria-label="Descubrir mas sobre Kit Anti Acne" data-landing-antiacne-open>
+                <figure class="kit-card__media">
+                  <img
+                    class="kit-card__image"
+                    src="assets/images/kit-anti-acne.webp"
+                    alt="Kit Anti Acne con jabones artesanales naturales"
+                  />
+                </figure>
+
+                <div class="kit-card__body">
+                  <h3 class="kit-card__title">Kit Anti Acn&eacute;</h3>
+                  <p class="kit-card__benefit">Piel limpia y equilibrada</p>
+                  <span class="kit-card__cta">Descubrir mas</span>
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider" aria-hidden="true">
+        <span class="section-divider__mark">
+          <svg viewBox="0 0 32 32">
+            <path d="M16 25.5V7.5" />
+            <path d="M16 10.2c-2.35-1.35-3.45-3.35-3.05-5.85 2.85.55 4.05 2.55 3.05 5.85Z" />
+            <path d="M16 13.2c-3.75-.15-6.45 1.85-7.95 5.65 4.25.45 7.1-1.45 7.95-5.65Z" />
+            <path d="M16 16.5c3.75-.15 6.45 1.85 7.95 5.65-4.25.45-7.1-1.45-7.95-5.65Z" />
+            <path d="M11.25 26.2h9.5" />
+          </svg>
+        </span>
+      </div>
+
+      <!-- Shopify section candidate: sections/ingredients.liquid -->
+      <section class="ingredients" aria-labelledby="ingredients-title">
+        <div class="ingredients__inner">
+          <div class="ingredients__content">
+            <p class="ingredients__eyebrow">Seleccion botanica</p>
+
+            <h2 class="ingredients__title" id="ingredients-title">
+              Ingredientes que transforman
+            </h2>
+
+            <p class="ingredients__subtitle">
+              Lo mejor de la naturaleza para tu piel.
+            </p>
+
+            <div class="ingredients__list" aria-label="Ingredientes principales">
+              <article class="ingredients__item">
+                <img class="ingredients__icon" src="assets/icons/icon-oat.svg" alt="" aria-hidden="true" />
+                <h3 class="ingredients__name">Avena</h3>
+              </article>
+
+              <article class="ingredients__item">
+                <img class="ingredients__icon" src="assets/icons/icon-charcoal.svg" alt="" aria-hidden="true" />
+                <h3 class="ingredients__name">Carb&oacute;n activado</h3>
+              </article>
+
+              <article class="ingredients__item">
+                <img class="ingredients__icon" src="assets/icons/icon-essential-oils.svg" alt="" aria-hidden="true" />
+                <h3 class="ingredients__name">Aceites esenciales</h3>
+              </article>
+
+              <article class="ingredients__item">
+                <img class="ingredients__icon" src="assets/icons/icon-clay.svg" alt="" aria-hidden="true" />
+                <h3 class="ingredients__name">Arcilla natural</h3>
+              </article>
+
+              <article class="ingredients__item">
+                <img class="ingredients__icon" src="assets/icons/icon-shea.svg" alt="" aria-hidden="true" />
+                <h3 class="ingredients__name">Manteca de karit&eacute;</h3>
+              </article>
+            </div>
+          </div>
+
+          <figure class="ingredients__media">
+            <img
+              class="ingredients__image"
+              src="assets/images/ingredients-product.webp"
+              alt="Jabon natural con aceite botanico, avena, arcilla y hojas"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <div class="section-divider" aria-hidden="true">
+        <span class="section-divider__mark">
+          <svg viewBox="0 0 32 32">
+            <path d="M16 25.5V7.5" />
+            <path d="M16 10.2c-2.35-1.35-3.45-3.35-3.05-5.85 2.85.55 4.05 2.55 3.05 5.85Z" />
+            <path d="M16 13.2c-3.75-.15-6.45 1.85-7.95 5.65 4.25.45 7.1-1.45 7.95-5.65Z" />
+            <path d="M16 16.5c3.75-.15 6.45 1.85 7.95 5.65-4.25.45-7.1-1.45-7.95-5.65Z" />
+            <path d="M11.25 26.2h9.5" />
+          </svg>
+        </span>
+      </div>
+
+      <!-- Shopify section candidate: sections/results.liquid -->
+      <section class="results" aria-labelledby="results-title">
+        <div class="results__inner">
+          <div class="results__content">
+            <h2 class="results__title" id="results-title">
+              Resultados que puedes ver y sentir
+            </h2>
+
+            <div class="results__metrics" aria-label="Resultados reportados por clientas">
+              <article class="results__metric">
+                <span class="results__metric-value" data-results-value="95">+0%</span>
+                <p class="results__metric-label">Piel mas suave</p>
+              </article>
+
+              <article class="results__metric">
+                <span class="results__metric-value" data-results-value="90">+0%</span>
+                <p class="results__metric-label">Noto su piel mas sana</p>
+              </article>
+
+              <article class="results__metric">
+                <span class="results__metric-value" data-results-value="88">+0%</span>
+                <p class="results__metric-label">Recomendaria nuestros kits</p>
+              </article>
+            </div>
+          </div>
+
+          <figure class="results__media">
+            <img
+              class="results__image"
+              src="assets/images/results-woman.webp"
+              alt="Mujer con piel saludable tocando suavemente su rostro"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <div class="section-divider" aria-hidden="true">
+        <span class="section-divider__mark">
+          <svg viewBox="0 0 32 32">
+            <path d="M16 25.5V7.5" />
+            <path d="M16 10.2c-2.35-1.35-3.45-3.35-3.05-5.85 2.85.55 4.05 2.55 3.05 5.85Z" />
+            <path d="M16 13.2c-3.75-.15-6.45 1.85-7.95 5.65 4.25.45 7.1-1.45 7.95-5.65Z" />
+            <path d="M16 16.5c3.75-.15 6.45 1.85 7.95 5.65-4.25.45-7.1-1.45-7.95-5.65Z" />
+            <path d="M11.25 26.2h9.5" />
+          </svg>
+        </span>
+      </div>
+
+      <!-- Shopify section candidate: sections/testimonial.liquid -->
+      <section class="testimonial" aria-labelledby="testimonial-title">
+        <div class="testimonial__inner">
+          <figure class="testimonial__media">
+            <img
+              class="testimonial__image"
+              src="assets/images/testimonial-product.webp"
+              alt="Jabon artesanal natural con flores secas y hojas botanicas"
+            />
+          </figure>
+
+          <div class="testimonial__content">
+            <p class="testimonial__eyebrow">Experiencias reales</p>
+
+            <h2 class="testimonial__title" id="testimonial-title">
+              Lo que dicen nuestras clientas
+            </h2>
+
+            <blockquote class="testimonial__quote">
+              &ldquo;Desde la primera semana sent&iacute; mi piel m&aacute;s suave, luminosa y con menos imperfecciones. Ahora forma parte de mi ritual diario.&rdquo;
+            </blockquote>
+
+            <div class="testimonial__meta">
+              <p class="testimonial__author">Mar&iacute;a G.</p>
+              <p class="testimonial__rating" aria-label="5 de 5 estrellas">
+                <span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider" aria-hidden="true">
+        <span class="section-divider__mark">
+          <svg viewBox="0 0 32 32">
+            <path d="M16 25.5V7.5" />
+            <path d="M16 10.2c-2.35-1.35-3.45-3.35-3.05-5.85 2.85.55 4.05 2.55 3.05 5.85Z" />
+            <path d="M16 13.2c-3.75-.15-6.45 1.85-7.95 5.65 4.25.45 7.1-1.45 7.95-5.65Z" />
+            <path d="M16 16.5c3.75-.15 6.45 1.85 7.95 5.65-4.25.45-7.1-1.45-7.95-5.65Z" />
+            <path d="M11.25 26.2h9.5" />
+          </svg>
+        </span>
+      </div>
+
+      <!-- Shopify section candidate: sections/final-cta.liquid -->
+      <section class="final-cta" aria-labelledby="final-cta-title">
+        <div class="final-cta__inner">
+          <div class="final-cta__content">
+            <p class="final-cta__eyebrow">Tu ritual empieza aqu&iacute;</p>
+
+            <h2 class="final-cta__title" id="final-cta-title">
+              Convierte tu rutina en tu momento favorito del d&iacute;a
+            </h2>
+
+            <p class="final-cta__text">
+              Date el cuidado que mereces.
+            </p>
+
+            <a class="final-cta__button" href="#kits-title">
+              Descubre tu kit ideal
+            </a>
+
+            <p class="final-cta__microcopy">
+              Ingredientes naturales &middot; Compra segura &middot; Env&iacute;o disponible
+            </p>
+          </div>
+
+          <figure class="final-cta__media">
+            <img
+              class="final-cta__image"
+              src="assets/images/final-cta-woman.webp"
+              alt="Mujer realizando un ritual natural de cuidado facial"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!-- Shopify section candidate: sections/trust-bar.liquid -->
+      <section class="trust-bar" aria-label="Beneficios de compra">
+        <div class="trust-bar__inner">
+          <article class="trust-item">
+            <div class="trust-item__icon">
+              <img src="assets/icons/icon-shipping.svg" alt="" aria-hidden="true" />
+            </div>
+            <div class="trust-item__content">
+              <h2 class="trust-item__title">Env&iacute;os a todo el pa&iacute;s</h2>
+              <p class="trust-item__text">Entrega r&aacute;pida y segura.</p>
+            </div>
+          </article>
+
+          <article class="trust-item">
+            <div class="trust-item__icon">
+              <img src="assets/icons/icon-secure-payment.svg" alt="" aria-hidden="true" />
+            </div>
+            <div class="trust-item__content">
+              <h2 class="trust-item__title">Pago 100% seguro</h2>
+              <p class="trust-item__text">Tus datos protegidos.</p>
+            </div>
+          </article>
+
+          <article class="trust-item">
+            <div class="trust-item__icon">
+              <img src="assets/icons/icon-satisfaction.svg" alt="" aria-hidden="true" />
+            </div>
+            <div class="trust-item__content">
+              <h2 class="trust-item__title">Garant&iacute;a de satisfacci&oacute;n</h2>
+              <p class="trust-item__text">Compra con tranquilidad.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Shopify template candidate: templates/page.kit-hidratante.liquid -->
+    <section class="landing-hidratante" id="landing-hidratante" aria-labelledby="landing-hidratante-title" aria-hidden="true" data-landing-hidratante>
+      <div class="landing-hidratante__surface" role="dialog" aria-modal="true" aria-labelledby="landing-hidratante-title" tabindex="-1">
+        <header class="landing-hidratante__topbar">
+          <div class="landing-hidratante__brand" aria-label="Natura Piel">
+            <span class="landing-hidratante__brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 48 48">
+                <path d="M24 6c7.6 5.2 13 12.8 13 21.1C37 35.4 31.2 42 24 42S11 35.4 11 27.1C11 18.8 16.4 11.2 24 6Z" />
+                <path d="M24 12v25M17 25c4.5-.2 8-2.3 11-6M31 25c-4.5-.2-8-2.3-11-6" />
+              </svg>
+            </span>
+            <span class="landing-hidratante__brand-text">
+              <span>Natura</span>
+              <span>Piel</span>
+            </span>
+          </div>
+
+          <button class="landing-hidratante__back" type="button" data-landing-hidratante-close>
+            <span aria-hidden="true">&larr;</span>
+            Volver a nuestros kits
+          </button>
+
+          <button class="landing-hidratante__close" type="button" aria-label="Cerrar landing Kit Hidratante" data-landing-hidratante-close>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 5l14 14M19 5 5 19" />
+            </svg>
+          </button>
+        </header>
+
+        <div class="landing-hidratante__scroll" data-landing-hidratante-scroll>
+          <section class="landing-hidratante__hero" aria-label="Kit Hidratante">
+            <div class="landing-hidratante__hero-content" data-landing-reveal>
+              <p class="landing-hidratante__eyebrow">Kit Hidratante</p>
+
+              <h1 class="landing-hidratante__title" id="landing-hidratante-title">
+                Hidrata, nutre y devuelve suavidad a tu piel
+              </h1>
+
+              <p class="landing-hidratante__lead">
+                Ritual completo para una piel hidratada, luminosa y saludable.
+              </p>
+
+              <ul class="landing-hidratante__hero-badges" aria-label="Ingredientes principales del Kit Hidratante">
+                <li>Avena y miel</li>
+                <li>Karit&eacute;</li>
+                <li>Leche de coco</li>
+              </ul>
+
+              <a class="landing-hidratante__button landing-hidratante__button--primary" href="#" data-hidratante-whatsapp>
+                <span>Quiero mi Kit Hidratante</span>
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+
+              <p class="landing-hidratante__microcopy">
+                Pago contra entrega | Env&iacute;o a todo RD
+              </p>
+            </div>
+
+            <figure class="landing-hidratante__hero-media" data-landing-reveal>
+              <img
+                class="landing-hidratante__hero-image"
+                src="assets/images/landing-hidratante-hero.webp"
+                alt="Kit Hidratante con jabones claros, avena y botanicos naturales"
+              />
+            </figure>
+          </section>
+
+          <section class="landing-hidratante__product landing-hidratante__section" aria-label="Ritual Hidratante" data-landing-reveal>
+            <p class="landing-hidratante__section-eyebrow">Kit Hidratante</p>
+            <h2 class="landing-hidratante__section-title">Ritual Hidratante</h2>
+            <p class="landing-hidratante__section-text">
+              Un ritual dise&ntilde;ado para nutrir, suavizar y recuperar la sensaci&oacute;n de bienestar en la piel.
+            </p>
+          </section>
+
+          <section class="landing-hidratante__ingredients landing-hidratante__section" aria-labelledby="landing-hidratante-ingredients-title">
+            <div class="landing-hidratante__section-head" data-landing-reveal>
+              <p class="landing-hidratante__section-eyebrow">Ingredientes clave</p>
+              <h2 class="landing-hidratante__section-title" id="landing-hidratante-ingredients-title">
+                Nutrici&oacute;n bot&aacute;nica para piel seca
+              </h2>
+            </div>
+
+            <div class="landing-hidratante__ingredient-grid">
+              <article class="landing-ingredient" data-landing-reveal>
+                <figure class="landing-ingredient__media">
+                  <img src="assets/images/landing-hidratante-avena-miel.webp" alt="Avena y miel para hidratar y calmar la piel" />
+                </figure>
+                <h3>Avena y miel</h3>
+                <p>Hidrata y calma</p>
+              </article>
+
+              <article class="landing-ingredient" data-landing-reveal>
+                <figure class="landing-ingredient__media">
+                  <img src="assets/images/landing-hidratante-karite.webp" alt="Manteca de karite para nutrir profundamente la piel" />
+                </figure>
+                <h3>Manteca de karit&eacute;</h3>
+                <p>Nutre profundamente la piel</p>
+              </article>
+
+              <article class="landing-ingredient" data-landing-reveal>
+                <figure class="landing-ingredient__media">
+                  <img src="assets/images/landing-hidratante-coco.webp" alt="Leche de coco para suavizar y aportar elasticidad" />
+                </figure>
+                <h3>Leche de coco</h3>
+                <p>Suaviza y aporta elasticidad</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="landing-hidratante__benefits landing-hidratante__section" aria-labelledby="landing-hidratante-benefits-title">
+            <div class="landing-hidratante__section-head" data-landing-reveal>
+              <p class="landing-hidratante__section-eyebrow">Beneficios</p>
+              <h2 class="landing-hidratante__section-title" id="landing-hidratante-benefits-title">
+                Para una piel que se siente nutrida
+              </h2>
+            </div>
+
+            <div class="landing-hidratante__benefit-grid">
+              <article class="landing-benefit" data-landing-reveal>
+                <span class="landing-benefit__icon" aria-hidden="true">
+                  <svg viewBox="0 0 32 32">
+                    <path d="M16 4c4.4 5.5 8 10.7 8 16.1 0 4.6-3.3 7.9-8 7.9s-8-3.3-8-7.9C8 14.7 11.6 9.5 16 4Z" />
+                    <path d="M12.5 20.5c1.3 1.3 3.9 1.8 6.8-.8" />
+                  </svg>
+                </span>
+                <h3>Hidrataci&oacute;n profunda</h3>
+                <p>Nutre intensamente la piel</p>
+              </article>
+
+              <article class="landing-benefit" data-landing-reveal>
+                <span class="landing-benefit__icon" aria-hidden="true">
+                  <svg viewBox="0 0 32 32">
+                    <path d="M7 18c3.2-7.8 9.3-11.8 18-12-1 9-5.8 15.2-14.6 18.4" />
+                    <path d="M8 25c4.8-7.2 9.8-11.7 15-16" />
+                  </svg>
+                </span>
+                <h3>Piel m&aacute;s suave y flexible</h3>
+                <p>Mejora textura y elasticidad</p>
+              </article>
+
+              <article class="landing-benefit" data-landing-reveal>
+                <span class="landing-benefit__icon" aria-hidden="true">
+                  <svg viewBox="0 0 32 32">
+                    <path d="M16 27S5.5 20.9 5.5 12.8c0-3.5 2.4-6.1 5.7-6.1 2 0 3.7 1 4.8 2.7 1.1-1.7 2.8-2.7 4.8-2.7 3.3 0 5.7 2.6 5.7 6.1C26.5 20.9 16 27 16 27Z" />
+                  </svg>
+                </span>
+                <h3>Sensaci&oacute;n de bienestar</h3>
+                <p>Ritual c&aacute;lido y sensorial</p>
+              </article>
+
+              <article class="landing-benefit" data-landing-reveal>
+                <span class="landing-benefit__icon" aria-hidden="true">
+                  <svg viewBox="0 0 32 32">
+                    <path d="M16 27V5" />
+                    <path d="M16 12c-4.2-.2-7.4-2.4-9.5-6 4.2.2 7.4 2.4 9.5 6Z" />
+                    <path d="M16 18c4.2-.2 7.4-2.4 9.5-6-4.2.2-7.4 2.4-9.5 6Z" />
+                    <path d="M16 24c-3.2-.1-5.7-1.7-7.4-4.5 3.2.1 5.7 1.7 7.4 4.5Z" />
+                  </svg>
+                </span>
+                <h3>Ingredientes naturales</h3>
+                <p>F&oacute;rmula inspirada en bot&aacute;nicos</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="landing-hidratante__testimonial landing-hidratante__section" aria-labelledby="landing-hidratante-testimonial-title" data-landing-reveal>
+            <figure class="landing-hidratante__testimonial-media">
+              <img
+                src="assets/images/landing-hidratante-testimonio.webp"
+                alt="Mujer con piel hidratada disfrutando su ritual de cuidado"
+              />
+            </figure>
+
+            <div class="landing-hidratante__testimonial-content">
+              <p class="landing-hidratante__section-eyebrow">Resultados reales</p>
+              <h2 class="landing-hidratante__testimonial-title" id="landing-hidratante-testimonial-title">
+                Piel m&aacute;s suave desde el primer ritual
+              </h2>
+              <blockquote>
+                &ldquo;Desde la primera semana mi piel se siente mucho m&aacute;s suave e hidratada. Me encanta el ritual.&rdquo;
+              </blockquote>
+              <div class="landing-hidratante__testimonial-meta">
+                <p>Daniela R.</p>
+                <span aria-label="5 de 5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="landing-hidratante__final-cta" aria-label="Comprar Kit Hidratante" data-landing-reveal>
+            <p class="landing-hidratante__section-eyebrow">Tu ritual hidratante empieza aqu&iacute;</p>
+            <h2>Quiero mi Kit Hidratante</h2>
+            <p>Hidrataci&oacute;n profunda &bull; Pago contra entrega &bull; Env&iacute;o a todo RD</p>
+            <a class="landing-hidratante__button landing-hidratante__button--gold" href="#" data-hidratante-whatsapp>
+              <span>Quiero mi Kit Hidratante</span>
+              <span aria-hidden="true">&rarr;</span>
+            </a>
+          </section>
+
+          <section class="landing-hidratante__trust" aria-label="Confianza de compra">
+            <article>
+              <span aria-hidden="true">
+                <svg viewBox="0 0 32 32">
+                  <path d="M7 10h18v12H7z" />
+                  <path d="M11 22a3 3 0 0 0 6 0M19 22a3 3 0 0 0 6 0" />
+                </svg>
+              </span>
+              Pago contra entrega
+            </article>
+            <article>
+              <span aria-hidden="true">
+                <svg viewBox="0 0 32 32">
+                  <path d="M5 18h22" />
+                  <path d="M22 13l5 5-5 5" />
+                  <path d="M7 10h10v16H7z" />
+                </svg>
+              </span>
+              Env&iacute;o a todo RD
+            </article>
+            <article>
+              <span aria-hidden="true">
+                <svg viewBox="0 0 32 32">
+                  <path d="M16 5 25 9v7c0 6-3.7 10-9 12-5.3-2-9-6-9-12V9l9-4Z" />
+                  <path d="m11.5 16.5 3 3 6-7" />
+                </svg>
+              </span>
+              Compra segura
+            </article>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shopify template candidate: templates/page.kit-antiacne.liquid -->
+    <section class="landing-antiacne" id="landing-antiacne" aria-labelledby="landing-antiacne-title" aria-hidden="true" data-landing-antiacne>
+      <div class="landing-antiacne__surface" role="dialog" aria-modal="true" aria-labelledby="landing-antiacne-title" tabindex="-1">
+        <header class="landing-antiacne__topbar">
+          <div class="landing-antiacne__brand" aria-label="Natura Piel">
+            <span class="landing-antiacne__brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 48 48">
+                <path d="M24 6c7.6 5.2 13 12.8 13 21.1C37 35.4 31.2 42 24 42S11 35.4 11 27.1C11 18.8 16.4 11.2 24 6Z" />
+                <path d="M24 12v25M17 25c4.5-.2 8-2.3 11-6M31 25c-4.5-.2-8-2.3-11-6" />
+              </svg>
+            </span>
+            <span class="landing-antiacne__brand-text">
+              <span>Natura</span>
+              <span>Piel</span>
+            </span>
+          </div>
+
+          <button class="landing-antiacne__back" type="button" data-landing-antiacne-close>
+            <span aria-hidden="true">&larr;</span>
+            Volver a nuestros kits
+          </button>
+
+          <button class="landing-antiacne__close" type="button" aria-label="Cerrar landing Kit Anti Acne" data-landing-antiacne-close>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 5l14 14M19 5 5 19" />
+            </svg>
+          </button>
+        </header>
+
+        <div class="landing-antiacne__scroll" data-landing-antiacne-scroll>
+          <section class="landing-antiacne__hero" aria-label="Kit Anti Acne">
+            <div class="landing-antiacne__hero-content" data-antiacne-reveal>
+              <p class="landing-antiacne__eyebrow">Kit Anti Acn&eacute;</p>
+
+              <h1 class="landing-antiacne__title" id="landing-antiacne-title">
+                Limpia en profundidad y reduce imperfecciones
+              </h1>
+
+              <p class="landing-antiacne__lead">
+                Combate el acn&eacute;, controla el exceso de grasa y recupera tu confianza.
+              </p>
+
+              <ul class="landing-antiacne__hero-badges" aria-label="Ingredientes principales del Kit Anti Acne">
+                <li>Carb&oacute;n activado</li>
+                <li>&Aacute;rbol de t&eacute;</li>
+                <li>Azufre</li>
+              </ul>
+
+              <a class="landing-antiacne__button landing-antiacne__button--primary" href="#" data-antiacne-whatsapp>
+                <span>Quiero mi Kit Antiacn&eacute;</span>
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+
+              <p class="landing-antiacne__microcopy">
+                Pago contra entrega | Env&iacute;o a todo RD
+              </p>
+            </div>
+
+            <figure class="landing-antiacne__hero-media" data-antiacne-reveal>
+              <img
+                class="landing-antiacne__hero-image"
+                src="assets/images/landing-antiacne-hero.webp"
+                alt="Kit Anti Acne con jabones verde y negro, carbon activado y botanicos"
+              />
+            </figure>
+          </section>
+
+          <section class="landing-antiacne__product landing-antiacne__section" aria-label="Ritual Purificante" data-antiacne-reveal>
+            <p class="landing-antiacne__section-eyebrow">Kit Anti Acn&eacute;</p>
+            <h2 class="landing-antiacne__section-title">Ritual Purificante</h2>
+            <p class="landing-antiacne__section-text">
+              Un ritual dise&ntilde;ado para limpiar, equilibrar y ayudar a reducir imperfecciones sin perder suavidad.
+            </p>
+          </section>
+
+          <section class="landing-antiacne__ingredients landing-antiacne__section" aria-labelledby="landing-antiacne-ingredients-title">
+            <div class="landing-antiacne__section-head" data-antiacne-reveal>
+              <p class="landing-antiacne__section-eyebrow">Ingredientes clave</p>
+              <h2 class="landing-antiacne__section-title" id="landing-antiacne-ingredients-title">
+                Limpieza bot&aacute;nica para piel con imperfecciones
+              </h2>
+            </div>
+
+            <div class="landing-antiacne__ingredient-grid">
+              <article class="landing-antiacne-ingredient" data-antiacne-reveal>
+                <figure class="landing-antiacne-ingredient__media">
+                  <img src="assets/images/landing-antiacne-carbon.webp" alt="Carbon activado para limpiar y desintoxicar la piel" />
+                </figure>
+                <h3>Carb&oacute;n activado</h3>
+                <p>Limpia y desintoxica la piel</p>
+              </article>
+
+              <article class="landing-antiacne-ingredient" data-antiacne-reveal>
+                <figure class="landing-antiacne-ingredient__media">
+                  <img src="assets/images/landing-antiacne-tea-tree.webp" alt="Arbol de te para combatir imperfecciones y granitos" />
+                </figure>
+                <h3>&Aacute;rbol de t&eacute;</h3>
+                <p>Combate imperfecciones y granitos</p>
+              </article>
+
+              <article class="landing-antiacne-ingredient" data-antiacne-reveal>
+                <figure class="landing-antiacne-ingredient__media">
+                  <img src="assets/images/landing-antiacne-sulfur.webp" alt="Azufre mineral para regular la grasa y prevenir brotes" />
+                </figure>
+                <h3>Azufre</h3>
+                <p>Regula la grasa y previene brotes</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="landing-antiacne__benefits landing-antiacne__section" aria-labelledby="landing-antiacne-benefits-title">
+            <div class="landing-antiacne__section-head" data-antiacne-reveal>
+              <p class="landing-antiacne__section-eyebrow">Beneficios</p>
+              <h2 class="landing-antiacne__section-title" id="landing-antiacne-benefits-title">
+                Para una piel m&aacute;s limpia y equilibrada
+              </h2>
+            </div>
+
+            <div class="landing-antiacne__benefit-grid">
+              <article class="landing-antiacne-benefit" data-antiacne-reveal>
+                <span class="landing-antiacne-benefit__icon" aria-hidden="true">
+                  <svg viewBox="0 0 32 32">
+                    <path d="M16 4c4.4 5.5 8 10.7 8 16.1 0 4.6-3.3 7.9-8 7.9s-8-3.3-8-7.9C8 14.7 11.6 9.5 16 4Z" />
+                    <path d="M12.5 20.5c1.3 1.3 3.9 1.8 6.8-.8" />
+                  </svg>
+                </span>
+                <h3>Limpieza profunda</h3>
+                <p>Purifica poros y deja la piel fresca</p>
+              </article>
+
+              <article class="landing-antiacne-benefit" data-antiacne-reveal>
+                <span class="landing-antiacne-benefit__icon" aria-hidden="true">
+                  <svg viewBox="0 0 32 32">
+                    <path d="M16 6v20M6 16h20" />
+                    <path d="M9 9c4.4.5 7.1 3.1 7 7-3.9.1-6.5-2.6-7-7ZM23 23c-4.4-.5-7.1-3.1-7-7 3.9-.1 6.5 2.6 7 7Z" />
+                  </svg>
+                </span>
+                <h3>Reduce granitos e imperfecciones</h3>
+                <p>Ayuda a calmar brotes visibles</p>
+              </article>
+
+              <article class="landing-antiacne-benefit" data-antiacne-reveal>
+                <span class="landing-antiacne-benefit__icon" aria-hidden="true">
+                  <svg viewBox="0 0 32 32">
+                    <path d="M16 4v4M16 24v4M4 16h4M24 16h4M7.5 7.5l2.8 2.8M21.7 21.7l2.8 2.8M24.5 7.5l-2.8 2.8M10.3 21.7l-2.8 2.8" />
+                    <circle cx="16" cy="16" r="6.2" />
+                  </svg>
+                </span>
+                <h3>Controla el brillo y la grasa</h3>
+                <p>Equilibra la sensaci&oacute;n de oleosidad</p>
+              </article>
+
+              <article class="landing-antiacne-benefit" data-antiacne-reveal>
+                <span class="landing-antiacne-benefit__icon" aria-hidden="true">
+                  <svg viewBox="0 0 32 32">
+                    <path d="M16 27S5.5 20.9 5.5 12.8c0-3.5 2.4-6.1 5.7-6.1 2 0 3.7 1 4.8 2.7 1.1-1.7 2.8-2.7 4.8-2.7 3.3 0 5.7 2.6 5.7 6.1C26.5 20.9 16 27 16 27Z" />
+                  </svg>
+                </span>
+                <h3>Piel m&aacute;s clara y uniforme</h3>
+                <p>Apoya una textura m&aacute;s limpia</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="landing-antiacne__testimonial landing-antiacne__section" aria-labelledby="landing-antiacne-testimonial-title" data-antiacne-reveal>
+            <figure class="landing-antiacne__testimonial-media">
+              <img
+                src="assets/images/landing-antiacne-testimonio.webp"
+                alt="Resultado testimonial de piel con menos imperfecciones"
+              />
+            </figure>
+
+            <div class="landing-antiacne__testimonial-content">
+              <p class="landing-antiacne__section-eyebrow">Resultados reales</p>
+              <h2 class="landing-antiacne__testimonial-title" id="landing-antiacne-testimonial-title">
+                Piel m&aacute;s limpia y equilibrada
+              </h2>
+              <blockquote>
+                &ldquo;Mi piel cambi&oacute; much&iacute;simo, menos granitos y menos grasa. &iexcl;Lo recomiendo 100%!&rdquo;
+              </blockquote>
+              <div class="landing-antiacne__testimonial-meta">
+                <p>Mar&iacute;a P.</p>
+                <span aria-label="5 de 5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="landing-antiacne__final-cta" aria-label="Comprar Kit Antiacne" data-antiacne-reveal>
+            <p class="landing-antiacne__section-eyebrow">Tu ritual purificante empieza aqu&iacute;</p>
+            <h2>Quiero mi Kit Antiacn&eacute;</h2>
+            <p>Limpieza profunda &bull; Pago contra entrega &bull; Env&iacute;o a todo RD</p>
+            <a class="landing-antiacne__button landing-antiacne__button--green" href="#" data-antiacne-whatsapp>
+              <span>Quiero mi Kit Antiacn&eacute;</span>
+              <span aria-hidden="true">&rarr;</span>
+            </a>
+          </section>
+
+          <section class="landing-antiacne__trust" aria-label="Confianza de compra">
+            <article>
+              <span aria-hidden="true">
+                <svg viewBox="0 0 32 32">
+                  <path d="M7 10h18v12H7z" />
+                  <path d="M11 22a3 3 0 0 0 6 0M19 22a3 3 0 0 0 6 0" />
+                </svg>
+              </span>
+              Pago contra entrega
+            </article>
+            <article>
+              <span aria-hidden="true">
+                <svg viewBox="0 0 32 32">
+                  <path d="M5 18h22" />
+                  <path d="M22 13l5 5-5 5" />
+                  <path d="M7 10h10v16H7z" />
+                </svg>
+              </span>
+              Env&iacute;o a todo RD
+            </article>
+            <article>
+              <span aria-hidden="true">
+                <svg viewBox="0 0 32 32">
+                  <path d="M16 5 25 9v7c0 6-3.7 10-9 12-5.3-2-9-6-9-12V9l9-4Z" />
+                  <path d="m11.5 16.5 3 3 6-7" />
+                </svg>
+              </span>
+              Compra segura
+            </article>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shopify template candidate: templates/page.kit-antimanchas.liquid -->
+    <section class="landing-antimanchas" id="landing-antimanchas" aria-labelledby="landing-antimanchas-title" aria-hidden="true" data-landing-antimanchas>
+      <div class="landing-antimanchas__surface" role="dialog" aria-modal="true" aria-labelledby="landing-antimanchas-title" tabindex="-1">
+        <header class="landing-antimanchas__topbar">
+          <div class="landing-antimanchas__brand" aria-label="Natura Piel">
+            <span class="landing-antimanchas__brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 48 48">
+                <path d="M24 6c7.6 5.2 13 12.8 13 21.1C37 35.4 31.2 42 24 42S11 35.4 11 27.1C11 18.8 16.4 11.2 24 6Z" />
+                <path d="M24 12v25M17 25c4.5-.2 8-2.3 11-6M31 25c-4.5-.2-8-2.3-11-6" />
+              </svg>
+            </span>
+            <span class="landing-antimanchas__brand-text">
+              <span>Natura</span>
+              <span>Piel</span>
+            </span>
+          </div>
+
+          <button class="landing-antimanchas__back" type="button" data-landing-antimanchas-close>
+            <span aria-hidden="true">&larr;</span>
+            Volver a nuestros kits
+          </button>
+
+          <button class="landing-antimanchas__close" type="button" aria-label="Cerrar landing Kit Anti Manchas" data-landing-antimanchas-close>
+            <svg viewBox="0 0 32 32" aria-hidden="true">
+              <path d="M8 8l16 16M24 8 8 24" />
+            </svg>
+          </button>
+        </header>
+
+        <div class="landing-antimanchas__scroll" data-landing-antimanchas-scroll>
+          <section class="landing-antimanchas__hero" aria-label="Kit Anti Manchas">
+            <div class="landing-antimanchas__hero-content" data-antimanchas-reveal>
+              <p class="landing-antimanchas__eyebrow">Kit Anti Manchas</p>
+
+              <h1 class="landing-antimanchas__title" id="landing-antimanchas-title">
+                Unifica, aclara y devuelve tu luminosidad
+              </h1>
+
+              <p class="landing-antimanchas__lead">
+                Reduce manchas, unifica el tono y revela tu mejor versi&oacute;n.
+              </p>
+
+              <ul class="landing-antimanchas__hero-badges" aria-label="Ingredientes principales del Kit Anti Manchas">
+                <li>Papaya</li>
+                <li>Arbutina</li>
+                <li>Rosa mosqueta</li>
+              </ul>
+
+              <a class="landing-antimanchas__button landing-antimanchas__button--primary" href="#" data-antimanchas-whatsapp>
+                <span>Quiero mi Kit Aclarante</span>
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+
+              <p class="landing-antimanchas__microcopy">
+                Pago contra entrega | Env&iacute;o a todo RD
+              </p>
+            </div>
+
+            <figure class="landing-antimanchas__hero-media" data-antimanchas-reveal>
+              <img
+                class="landing-antimanchas__hero-image"
+                src="assets/images/landing-antimanchas-hero.webp"
+                alt="Kit Anti Manchas con jabones claros, papaya, flores rosadas y empaque premium"
+              />
+            </figure>
+          </section>
+
+          <section class="landing-antimanchas__product landing-antimanchas__section" aria-label="Ritual Iluminador" data-antimanchas-reveal>
+            <p class="landing-antimanchas__section-eyebrow">Kit Anti Manchas</p>
+            <h2 class="landing-antimanchas__section-title">Ritual Iluminador</h2>
+            <p class="landing-antimanchas__section-text">
+              Un ritual dise&ntilde;ado para unificar el tono, reducir la apariencia de manchas y devolver luminosidad a la piel.
+            </p>
+          </section>
+
+          <section class="landing-antimanchas__ingredients landing-antimanchas__section" aria-labelledby="landing-antimanchas-ingredients-title">
+            <div class="landing-antimanchas__section-head" data-antimanchas-reveal>
+              <p class="landing-antimanchas__section-eyebrow">Ingredientes clave</p>
+              <h2 class="landing-antimanchas__section-title" id="landing-antimanchas-ingredients-title">
+                Luminosidad bot&aacute;nica para tono uniforme
+              </h2>
+            </div>
+
+            <div class="landing-antimanchas__ingredient-grid">
+              <article class="landing-antimanchas-ingredient" data-antimanchas-reveal>
+                <figure class="landing-antimanchas-ingredient__media">
+                  <img src="assets/images/landing-antimanchas-papaya.webp" alt="Papaya para iluminar y ayudar a unificar el tono" />
+                </figure>
+                <h3>Papaya</h3>
+                <p>Ilumina y ayuda a unificar el tono</p>
+              </article>
+
+              <article class="landing-antimanchas-ingredient" data-antimanchas-reveal>
+                <figure class="landing-antimanchas-ingredient__media">
+                  <img src="assets/images/landing-antimanchas-arbutina.webp" alt="Arbutina y activo cosm&eacute;tico para atenuar manchas y marcas" />
+                </figure>
+                <h3>Arbutina</h3>
+                <p>Aten&uacute;a manchas y marcas</p>
+              </article>
+
+              <article class="landing-antimanchas-ingredient" data-antimanchas-reveal>
+                <figure class="landing-antimanchas-ingredient__media">
+                  <img src="assets/images/landing-antimanchas-rosa-mosqueta.webp" alt="Rosa mosqueta para regenerar y mejorar la apariencia de la piel" />
+                </figure>
+                <h3>Rosa mosqueta</h3>
+                <p>Regenera y mejora la apariencia de la piel</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="landing-antimanchas__benefits landing-antimanchas__section" aria-labelledby="landing-antimanchas-benefits-title">
+            <div class="landing-antimanchas__section-head" data-antimanchas-reveal>
+              <p class="landing-antimanchas__section-eyebrow">Beneficios</p>
+              <h2 class="landing-antimanchas__section-title" id="landing-antimanchas-benefits-title">
+                Para una piel m&aacute;s luminosa y pareja
+              </h2>
+            </div>
+
+            <div class="landing-antimanchas__benefit-grid">
+              <article class="landing-antimanchas-benefit" data-antimanchas-reveal>
+                <span class="landing-antimanchas-benefit__icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48">
+                    <path d="M15 18c4-6 11-9 18-7-1 8-6 15-14 19-4 2-8 2-11 1 1-5 3-9 7-13Z" />
+                    <path d="M15 30c4-6 10-10 18-14" />
+                    <path d="M34 32c2.5 0 4.5 2 4.5 4.5S36.5 41 34 41s-4.5-2-4.5-4.5S31.5 32 34 32Z" />
+                  </svg>
+                </span>
+                <h3>Reduce manchas y marcas</h3>
+                <p>Ayuda a suavizar la apariencia de marcas visibles.</p>
+              </article>
+
+              <article class="landing-antimanchas-benefit" data-antimanchas-reveal>
+                <span class="landing-antimanchas-benefit__icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48">
+                    <path d="M24 8v7M24 33v7M8 24h7M33 24h7M12.7 12.7l5 5M30.3 30.3l5 5M35.3 12.7l-5 5M17.7 30.3l-5 5" />
+                    <circle cx="24" cy="24" r="8" />
+                  </svg>
+                </span>
+                <h3>Tono m&aacute;s uniforme y luminoso</h3>
+                <p>Aporta claridad visual y una piel m&aacute;s pareja.</p>
+              </article>
+
+              <article class="landing-antimanchas-benefit" data-antimanchas-reveal>
+                <span class="landing-antimanchas-benefit__icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48">
+                    <path d="M24 7c2 7 5 10 12 12-7 2-10 5-12 12-2-7-5-10-12-12 7-2 10-5 12-12Z" />
+                    <path d="M36 28c1 4 3 6 7 7-4 1-6 3-7 7-1-4-3-6-7-7 4-1 6-3 7-7Z" />
+                  </svg>
+                </span>
+                <h3>Piel m&aacute;s radiante y saludable</h3>
+                <p>Revela una apariencia fresca y con mejor luz.</p>
+              </article>
+
+              <article class="landing-antimanchas-benefit" data-antimanchas-reveal>
+                <span class="landing-antimanchas-benefit__icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48">
+                    <path d="M24 39V18" />
+                    <path d="M24 22c-7-1-12-5-15-12 8-1 14 2 18 8" />
+                    <path d="M24 29c7-1 12-5 15-12-8-1-14 2-18 8" />
+                  </svg>
+                </span>
+                <h3>Ingredientes naturales</h3>
+                <p>Activos bot&aacute;nicos pensados para tu ritual diario.</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="landing-antimanchas__testimonial landing-antimanchas__section" aria-labelledby="landing-antimanchas-testimonial-title" data-antimanchas-reveal>
+            <figure class="landing-antimanchas__testimonial-media">
+              <img
+                src="assets/images/landing-antimanchas-testimonio.webp"
+                alt="Comparaci&oacute;n antes y despu&eacute;s de piel m&aacute;s luminosa y uniforme"
+              />
+            </figure>
+            <div class="landing-antimanchas__testimonial-content">
+              <p class="landing-antimanchas__section-eyebrow">Resultados reales</p>
+              <h2 class="landing-antimanchas__testimonial-title" id="landing-antimanchas-testimonial-title">
+                Piel m&aacute;s luminosa y uniforme
+              </h2>
+              <blockquote>
+                &ldquo;Mis manchas han disminuido mucho y mi piel se ve m&aacute;s luminosa y pareja.&rdquo;
+              </blockquote>
+              <div class="landing-antimanchas__testimonial-meta">
+                <p>Paola G.</p>
+                <span aria-label="5 de 5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="landing-antimanchas__final-cta" aria-label="Comprar Kit Aclarante" data-antimanchas-reveal>
+            <p class="landing-antimanchas__section-eyebrow">Tu ritual iluminador empieza aqu&iacute;</p>
+            <h2>Quiero mi Kit Aclarante</h2>
+            <p>Tono uniforme &bull; Pago contra entrega &bull; Env&iacute;o a todo RD</p>
+            <a class="landing-antimanchas__button landing-antimanchas__button--coral" href="#" data-antimanchas-whatsapp>
+              <span>Quiero mi Kit Aclarante</span>
+              <span aria-hidden="true">&rarr;</span>
+            </a>
+          </section>
+
+          <section class="landing-antimanchas__trust" aria-label="Confianza de compra">
+            <article>
+              <span aria-hidden="true">
+                <svg viewBox="0 0 32 32">
+                  <path d="M7 10h18v12H7z" />
+                  <path d="M11 22a3 3 0 0 0 6 0M19 22a3 3 0 0 0 6 0" />
+                </svg>
+              </span>
+              Pago contra entrega
+            </article>
+            <article>
+              <span aria-hidden="true">
+                <svg viewBox="0 0 32 32">
+                  <path d="M5 18h22" />
+                  <path d="M22 13l5 5-5 5" />
+                  <path d="M7 10h10v16H7z" />
+                </svg>
+              </span>
+              Env&iacute;o a todo RD
+            </article>
+            <article>
+              <span aria-hidden="true">
+                <svg viewBox="0 0 32 32">
+                  <path d="M16 5 25 9v7c0 6-3.7 10-9 12-5.3-2-9-6-9-12V9l9-4Z" />
+                  <path d="m11.5 16.5 3 3 6-7" />
+                </svg>
+              </span>
+              Compra segura
+            </article>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shopify section candidate: sections/footer.liquid -->
+    <footer class="site-footer" aria-labelledby="footer-brand-title">
+      <div class="site-footer__inner">
+        <div class="site-footer__brand">
+          <a class="footer-brand" href="#" aria-label="Natura Piel inicio">
+            <span class="footer-brand__mark" aria-hidden="true">
+              <svg viewBox="0 0 48 48">
+                <path d="M24 6c7.6 5.2 13 12.8 13 21.1C37 35.4 31.2 42 24 42S11 35.4 11 27.1C11 18.8 16.4 11.2 24 6Z" />
+                <path d="M24 12v25M17 25c4.5-.2 8-2.3 11-6M31 25c-4.5-.2-8-2.3-11-6" />
+              </svg>
+            </span>
+            <span class="footer-brand__text" id="footer-brand-title">
+              <span>Natura</span>
+              <span>Piel</span>
+            </span>
+          </a>
+
+          <p class="site-footer__description">
+            Rituales naturales para una piel saludable y radiante.
+          </p>
+        </div>
+
+        <nav class="site-footer__nav" aria-label="Explorar">
+          <h2 class="site-footer__heading">Explorar</h2>
+          <a href="#">Inicio</a>
+          <a href="#">Nosotros</a>
+          <a href="#kits-title">Kits</a>
+          <a href="#">Contacto</a>
+        </nav>
+
+        <nav class="site-footer__nav" aria-label="Ayuda">
+          <h2 class="site-footer__heading">Ayuda</h2>
+          <a href="#">Preguntas frecuentes</a>
+          <a href="#">Env&iacute;os y entregas</a>
+        </nav>
+
+        <div class="site-footer__social">
+          <h2 class="site-footer__heading">S&iacute;guenos</h2>
+          <div class="site-footer__social-links">
+            <a href="#" aria-label="Instagram">
+              <img src="assets/icons/icon-instagram.svg" alt="" aria-hidden="true" />
+              <span>Instagram</span>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <img src="assets/icons/icon-facebook.svg" alt="" aria-hidden="true" />
+              <span>Facebook</span>
+            </a>
+            <a href="#" aria-label="TikTok">
+              <img src="assets/icons/icon-tiktok.svg" alt="" aria-hidden="true" />
+              <span>TikTok</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <p>&copy; 2026 Natura Piel</p>
+        <p>Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/header-hero.js"></script>
+  <script src="js/about-overlay.js"></script>
+  <script src="js/contact-modal.js"></script>
+  <script src="js/section-divider.js"></script>
+  <script src="js/benefits.js"></script>
+  <script src="js/editorial-soaps.js"></script>
+  <script src="js/skin-needs.js"></script>
+  <script src="js/kits.js"></script>
+  <script src="js/landing-hidratante.js"></script>
+  <script src="js/landing-antiacne.js"></script>
+  <script src="js/landing-antimanchas.js"></script>
+  <script src="js/ingredients.js"></script>
+  <script src="js/results.js"></script>
+  <script src="js/testimonial.js"></script>
+  <script src="js/final-cta.js"></script>
+  <script src="js/trust-bar.js"></script>
+  <script src="js/footer.js"></script>
+</body>
+</html>

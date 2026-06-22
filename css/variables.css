@@ -1,0 +1,18 @@
+:root {
+  --color-ivory: #fffaf1;
+  --color-cream: #f5eddf;
+  --color-cream-deep: #e9ddca;
+  --color-mist: #fbf6ed;
+  --color-olive: #747b52;
+  --color-olive-dark: #495235;
+  --color-clay: #b38c68;
+  --color-ink: #262219;
+  --color-muted: #766f63;
+  --color-border: rgba(68, 58, 42, 0.16);
+
+  --font-serif: Georgia, "Times New Roman", serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+
+  --header-height: 72px;
+  --ease-premium: cubic-bezier(0.22, 1, 0.36, 1);
+}

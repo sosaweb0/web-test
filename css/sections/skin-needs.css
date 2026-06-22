@@ -1,0 +1,256 @@
+.skin-needs {
+  position: relative;
+  width: 100%;
+  background:
+    radial-gradient(circle at 72% 18%, rgba(255, 250, 241, 0.32), transparent 30%),
+    linear-gradient(90deg, #fbf4ea 0%, #fbf4ea 56%, #f8eddf 100%);
+  overflow: hidden;
+  margin-top: -1px;
+  margin-bottom: clamp(-18px, -1.25vw, -8px);
+}
+
+.skin-needs::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: 1;
+  height: clamp(42px, 4vw, 72px);
+  background: linear-gradient(180deg, rgba(248, 237, 223, 0.42), rgba(251, 244, 234, 0));
+  pointer-events: none;
+}
+
+.skin-needs__inner {
+  position: relative;
+  min-height: clamp(202px, 15vw, 250px);
+  display: grid;
+  grid-template-columns: minmax(220px, 32%) 1fr;
+  align-items: center;
+  overflow: hidden;
+}
+
+.skin-needs__media {
+  position: relative;
+  z-index: 2;
+  min-height: clamp(202px, 15vw, 250px);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: transparent;
+}
+
+.skin-needs__media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 62% 42%, rgba(117, 124, 82, 0.035), transparent 58%),
+    radial-gradient(ellipse at 52% 66%, rgba(251, 244, 234, 0.18), transparent 64%),
+    linear-gradient(112deg, transparent 8%, rgba(255, 250, 241, 0.06) 48%, transparent 84%);
+  pointer-events: none;
+}
+
+.skin-needs__image {
+  width: min(128%, 515px);
+  height: auto;
+  max-height: clamp(285px, 29vw, 470px);
+  object-fit: contain;
+  object-position: center;
+  opacity: 0.98;
+  filter: saturate(1.02) contrast(0.99) drop-shadow(0 18px 34px rgba(73, 82, 53, 0.06));
+  transform: translateX(clamp(26px, 2.6vw, 54px)) translateY(clamp(2px, 0.6vw, 10px)) rotate(-4deg);
+  transform-origin: 50% 78%;
+  -webkit-mask-image:
+    radial-gradient(ellipse at center, #000 68%, rgba(0, 0, 0, 0.9) 82%, transparent 98%);
+  mask-image:
+    radial-gradient(ellipse at center, #000 68%, rgba(0, 0, 0, 0.9) 82%, transparent 98%);
+}
+
+.skin-needs__content {
+  position: relative;
+  z-index: 3;
+  padding: clamp(24px, 2.3vw, 36px) clamp(58px, 5.6vw, 118px) clamp(22px, 2.2vw, 34px) clamp(0px, 1.1vw, 22px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.skin-needs__eyebrow {
+  margin: 0 0 8px;
+  color: var(--color-olive-dark);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.skin-needs__title {
+  max-width: 11ch;
+  margin: 0;
+  color: var(--color-ink);
+  font-family: var(--font-serif);
+  font-size: clamp(34px, 2.8vw, 50px);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.skin-needs__subtitle {
+  max-width: 360px;
+  margin: 6px 0 0;
+  color: var(--color-muted);
+  font-size: clamp(15px, 1vw, 18px);
+  line-height: 1.52;
+}
+
+.skin-needs__options {
+  width: min(100%, 560px);
+  margin-top: clamp(13px, 1.35vw, 19px);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(10px, 1.1vw, 20px);
+}
+
+.skin-needs__option {
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  gap: 9px;
+  text-align: center;
+}
+
+.skin-needs__icon {
+  width: clamp(40px, 2.8vw, 50px);
+  height: clamp(40px, 2.8vw, 50px);
+  object-fit: contain;
+}
+
+.skin-needs__option-title {
+  max-width: 150px;
+  margin: 0;
+  color: #40392c;
+  font-size: clamp(13px, 0.82vw, 15px);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.skin-needs[data-animate] .skin-needs__media,
+.skin-needs[data-animate] .skin-needs__eyebrow,
+.skin-needs[data-animate] .skin-needs__title,
+.skin-needs[data-animate] .skin-needs__subtitle,
+.skin-needs[data-animate] .skin-needs__option {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.skin-needs.is-visible .skin-needs__media,
+.skin-needs.is-visible .skin-needs__eyebrow,
+.skin-needs.is-visible .skin-needs__title,
+.skin-needs.is-visible .skin-needs__subtitle,
+.skin-needs.is-visible .skin-needs__option {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 760ms var(--ease-premium),
+    transform 760ms var(--ease-premium);
+}
+
+.skin-needs.is-visible .skin-needs__title {
+  transition-delay: 90ms;
+}
+
+.skin-needs.is-visible .skin-needs__subtitle {
+  transition-delay: 170ms;
+}
+
+.skin-needs.is-visible .skin-needs__option:nth-child(1) {
+  transition-delay: 240ms;
+}
+
+.skin-needs.is-visible .skin-needs__option:nth-child(2) {
+  transition-delay: 320ms;
+}
+
+.skin-needs.is-visible .skin-needs__option:nth-child(3) {
+  transition-delay: 400ms;
+}
+
+@media (max-width: 980px) {
+  .skin-needs__inner {
+    grid-template-columns: minmax(190px, 30%) 1fr;
+  }
+
+  .skin-needs__content {
+    padding: 30px 32px 32px 14px;
+  }
+}
+
+@media (max-width: 760px) {
+  .skin-needs__inner {
+    min-height: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .skin-needs__media {
+    min-height: 190px;
+  }
+
+  .skin-needs__media::after {
+    background:
+      radial-gradient(ellipse at 50% 54%, rgba(255, 250, 241, 0.16), transparent 56%),
+      linear-gradient(180deg, rgba(248, 237, 223, 0.02) 0%, rgba(248, 237, 223, 0.58) 100%);
+  }
+
+  .skin-needs__image {
+    width: min(72%, 270px);
+    max-height: 210px;
+    transform: translateY(-2px) rotate(-4deg);
+  }
+
+  .skin-needs__content {
+    padding: 22px 28px 34px;
+  }
+
+  .skin-needs__title {
+    max-width: 10ch;
+    font-size: clamp(34px, 10vw, 52px);
+  }
+
+  .skin-needs__options {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+  }
+}
+
+@media (max-width: 520px) {
+  .skin-needs__media {
+    min-height: 168px;
+  }
+
+  .skin-needs__image {
+    width: min(74%, 240px);
+    max-height: 188px;
+  }
+
+  .skin-needs__content {
+    padding: 20px 22px 32px;
+  }
+
+  .skin-needs__options {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skin-needs[data-animate] .skin-needs__media,
+  .skin-needs[data-animate] .skin-needs__eyebrow,
+  .skin-needs[data-animate] .skin-needs__title,
+  .skin-needs[data-animate] .skin-needs__subtitle,
+  .skin-needs[data-animate] .skin-needs__option {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

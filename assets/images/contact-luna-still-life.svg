@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1240" role="img" aria-labelledby="title desc">
+  <title id="title">LUNA+ Skincare still life</title>
+  <desc id="desc">Composicion premium con jabon, cepillo de bambu, avena, ceramica y hojas botanicas.</desc>
+  <defs>
+    <radialGradient id="bgGlow" cx="48%" cy="36%" r="72%">
+      <stop offset="0%" stop-color="#fffaf1"/>
+      <stop offset="58%" stop-color="#f3e6d5"/>
+      <stop offset="100%" stop-color="#dfcbb2"/>
+    </radialGradient>
+    <linearGradient id="linen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff8ed"/>
+      <stop offset="48%" stop-color="#eadac4"/>
+      <stop offset="100%" stop-color="#cdb899"/>
+    </linearGradient>
+    <linearGradient id="soap" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fbefd7"/>
+      <stop offset="50%" stop-color="#d9bd93"/>
+      <stop offset="100%" stop-color="#b89566"/>
+    </linearGradient>
+    <linearGradient id="stone" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8ddcc"/>
+      <stop offset="100%" stop-color="#bda98d"/>
+    </linearGradient>
+    <linearGradient id="bamboo" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c99a55"/>
+      <stop offset="52%" stop-color="#e3bd78"/>
+      <stop offset="100%" stop-color="#a8753d"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="28" stdDeviation="28" flood-color="#59452f" flood-opacity="0.24"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#59452f" flood-opacity="0.14"/>
+    </filter>
+    <pattern id="grain" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="6" r="1.2" fill="#997b55" opacity="0.13"/>
+      <circle cx="18" cy="12" r="0.9" fill="#8b704e" opacity="0.12"/>
+      <circle cx="11" cy="22" r="0.8" fill="#fff9ef" opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <rect width="1080" height="1240" fill="url(#bgGlow)"/>
+  <path d="M-40 935c170-98 298-64 445-18 161 51 309 74 719-146v509H-40Z" fill="url(#linen)" opacity="0.92"/>
+  <path d="M-20 1005c210-74 404-62 574-8 176 56 352 55 566-46v333H-20Z" fill="#f8ead6" opacity="0.66"/>
+
+  <g opacity="0.45" stroke="#d6c3aa" stroke-width="2">
+    <path d="M0 930c225-70 388-66 575 1 170 62 323 61 505-28" fill="none"/>
+    <path d="M0 991c238-64 426-44 594 12 180 60 336 50 486-33" fill="none"/>
+  </g>
+
+  <g transform="translate(74 122)" opacity="0.94">
+    <g stroke="#78815b" stroke-width="6" stroke-linecap="round" fill="none">
+      <path d="M188 456C272 324 376 209 521 129"/>
+      <path d="M270 326c-82-12-141-48-181-108 82 3 144 38 181 108Z" fill="#7d875e" opacity="0.72"/>
+      <path d="M352 245c-81-7-135-41-164-102 78 6 133 40 164 102Z" fill="#8a956b" opacity="0.72"/>
+      <path d="M433 181c-73-6-120-35-142-88 69 5 118 34 142 88Z" fill="#78835f" opacity="0.72"/>
+      <path d="M356 263c72 28 116 72 133 132-70-19-114-63-133-132Z" fill="#8b956b" opacity="0.68"/>
+      <path d="M457 189c68 22 111 60 129 114-67-15-110-53-129-114Z" fill="#77825d" opacity="0.68"/>
+    </g>
+  </g>
+
+  <g transform="translate(214 150)" filter="url(#softShadow)">
+    <path d="M0 312c64-121 185-165 316-113 58 23 101 17 164-18 93-51 206-24 262 66 70 112-19 253-158 249H155C36 493-51 407 0 312Z" fill="#fff8ec" opacity="0.6"/>
+  </g>
+
+  <g transform="translate(424 526)" filter="url(#shadow)">
+    <path d="M41 288 489 232 584 354 126 431Z" fill="url(#stone)"/>
+    <path d="M126 431 584 354 579 452 122 529Z" fill="#9f8b71"/>
+    <path d="M41 288 126 431 122 529 37 386Z" fill="#c7b49b"/>
+    <g opacity="0.45" fill="#7d6b55">
+      <circle cx="142" cy="340" r="5"/><circle cx="224" cy="318" r="3"/><circle cx="431" cy="290" r="4"/><circle cx="490" cy="359" r="3"/>
+    </g>
+  </g>
+
+  <g transform="translate(488 386)" filter="url(#shadow)">
+    <path d="M0 76 276 34 374 98 96 156Z" fill="#fff4df"/>
+    <path d="M96 156 374 98 368 315 92 377Z" fill="url(#soap)"/>
+    <path d="M0 76 96 156 92 377 0 281Z" fill="#e0c49a"/>
+    <path d="M64 118c49 12 105 7 168-14 31-10 64-14 99-10" fill="none" stroke="#f7e8ce" stroke-width="8" stroke-linecap="round" opacity="0.82"/>
+    <rect x="132" y="172" width="166" height="86" rx="6" fill="#f9e8cf" opacity="0.78"/>
+    <text x="215" y="212" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="36" fill="#3b3427" letter-spacing="8">LUNA+</text>
+    <text x="215" y="241" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5b5243" letter-spacing="6">SKINCARE</text>
+    <path d="M132 266h166" stroke="#8a7f5c" stroke-width="2" opacity="0.55"/>
+    <rect x="0" y="76" width="96" height="204" fill="url(#grain)" opacity="0.35"/>
+  </g>
+
+  <g transform="translate(684 782) rotate(-12)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="312" height="70" rx="35" fill="url(#bamboo)"/>
+    <rect x="18" y="14" width="120" height="42" rx="21" fill="#dfbd7a" opacity="0.5"/>
+    <g stroke="#7f5b32" stroke-width="2" opacity="0.42">
+      <path d="M54 8v54M97 8v54M139 7v56M182 7v56M225 8v54"/>
+    </g>
+    <g transform="translate(238 -18)">
+      <rect x="0" y="0" width="80" height="108" rx="38" fill="#c79b5a"/>
+      <g stroke="#f0d79d" stroke-width="3" stroke-linecap="round">
+        <path d="M20 16v76M31 11v85M42 9v88M53 11v85M64 17v74"/>
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(122 858)" filter="url(#softShadow)">
+    <ellipse cx="143" cy="75" rx="142" ry="62" fill="#bb9f79" opacity="0.34"/>
+    <path d="M0 46c26 104 254 104 286 0 0 84-64 144-143 144S0 130 0 46Z" fill="#d8c2a2"/>
+    <ellipse cx="143" cy="46" rx="143" ry="46" fill="#f8efe2"/>
+    <g fill="#c5974e" opacity="0.86">
+      <ellipse cx="83" cy="42" rx="30" ry="9" transform="rotate(-12 83 42)"/>
+      <ellipse cx="124" cy="39" rx="34" ry="10" transform="rotate(13 124 39)"/>
+      <ellipse cx="171" cy="44" rx="31" ry="9" transform="rotate(-6 171 44)"/>
+      <ellipse cx="212" cy="41" rx="27" ry="8" transform="rotate(17 212 41)"/>
+      <ellipse cx="103" cy="60" rx="29" ry="8" transform="rotate(21 103 60)"/>
+      <ellipse cx="158" cy="61" rx="34" ry="10" transform="rotate(-19 158 61)"/>
+      <ellipse cx="199" cy="60" rx="27" ry="8" transform="rotate(5 199 60)"/>
+    </g>
+  </g>
+
+  <g transform="translate(188 528)" filter="url(#softShadow)">
+    <path d="M44 304c58-54 74-117 48-188C64 40 97 4 164 0c71 0 112 40 100 112-13 73-70 114-171 123 75 8 121 42 138 102-64 25-127 14-187-33Z" fill="#e5d4bd"/>
+    <g stroke="#8a7f5c" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.72">
+      <path d="M152 28c10 75-20 132-90 170"/>
+      <path d="M101 92c-48-12-80-38-96-80 50 4 82 31 96 80Z" fill="#8f9a70" opacity="0.62"/>
+      <path d="M78 183c-42 11-79 2-111-28 45-9 82 0 111 28Z" fill="#7f8a64" opacity="0.6"/>
+      <path d="M121 135c51 9 89 37 114 83-50-2-88-30-114-83Z" fill="#8f9a70" opacity="0.56"/>
+    </g>
+  </g>
+
+  <g opacity="0.38" fill="#fffaf2">
+    <circle cx="884" cy="196" r="92"/>
+    <circle cx="124" cy="262" r="74"/>
+    <circle cx="1004" cy="954" r="116"/>
+  </g>
+</svg>
